@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>页面标题</title>
+    <title>三张正方形比例的图片示例</title>
+    <style>
+      .image-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+      .image {
+        width: calc(33.33% - 10px);
+        padding-bottom: calc(33.33% - 10px);
+        background-size: cover;
+        background-position: center;
+      }
+      .image-1 {
+        background-image: url("1.jpg");
+      }
+      .image-2 {
+        background-image: url("2.jpg");
+      }
+      .image-3 {
+        background-image: url("3.jpg");
+      }
+    </style>
   </head>
   <body>
-    <h1>大字标题</h1>
-    <video controls>
-      <source src="1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div class="image-row">
+      <div class="image image-1"></div>
+      <div class="image image-2"></div>
+      <div class="image image-3"></div>
+    </div>
   </body>
 </html>
